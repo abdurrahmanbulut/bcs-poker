@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# BCS Poker Planning
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+BCS Poker Planning is a real-time, collaborative, and interactive application designed to facilitate agile poker planning sessions. This tool enables teams to estimate their work items efficiently and remotely, providing an intuitive interface for all participants.
 
-## Available Scripts
+## Beta Version Disclaimer
+:warning: **Please note that BCS Poker Planning is currently in beta.** While I have done our best to ensure a smooth user experience, there may be unforeseen issues or incomplete features. I appreciate your understanding and welcome any feedback or reports of issues to help us improve the application.
 
-In the project directory, you can run:
+## Technologies Used
+- React
+- Firebase (Authentication and Realtime Database)
+- CSS
 
-### `npm start`
+## Setup and Installation
+1. Clone the repository: `git clone https://github.com/abdurrahmanbulut/bcs-poker.git`
+2. Install the dependencies: `npm install`
+3. Start the application: `npm start`
+4. Visit `http://localhost:3000` in your browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
+- **Real-Time Collaboration:** All changes are reflected in real time for every participant in the session.
+- **User Authentication:** Secure user authentication to keep your planning sessions private.
+- **Interactive Card Selection:** Participants can select and change their estimates until the session is finalized.
+- **Instant Result Calculation:** The application calculates the average of selected numbers instantly when the cards are revealed.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to Use
+1. **Login/Signup:** Start by creating an account or logging in.
+2. **Join a Session:** Enter the planning session with your team.
+3. **Select a Card:** Choose your estimate for the work item being discussed.
+4. **Reveal Cards:** Once everyone has made their selection, reveal all the cards.
+5. **Reset and Repeat:** After discussing the estimates, reset the selections for the next item.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
+![Screenshot 1](public/login.png)
 
-### `npm run build`
+![Screenshot 2](public/dashboard)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screenshot 3](public/when-selected)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Screenshot 4](public/open-card)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screenshot 5](public/reset-selecteds)
 
-### `npm run eject`
+![Screenshot 6](public/firebase)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
+This project is licensed under the MIT License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Acknowledgments
+- Thanks to everyone who contributed to this project!
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
