@@ -34,15 +34,15 @@ BCS Poker Planning is a real-time, collaborative, and interactive application de
 ## Screenshots
 ![Screenshot 1](public/login.png)
 
-![Screenshot 2](public/dashboard)
+![Screenshot 2](public/dashboard.png)
 
-![Screenshot 3](public/when-selected)
+![Screenshot 3](public/when-selected.png)
 
-![Screenshot 4](public/open-card)
+![Screenshot 4](public/open-card.png)
 
-![Screenshot 5](public/reset-selecteds)
+![Screenshot 5](public/reset-selecteds.png)
 
-![Screenshot 6](public/firebase)
+![Screenshot 6](public/firebase.png)
 
 
 ## Contributing
