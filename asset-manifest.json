@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bcs-poker/static/css/main.7ce45154.css",
+    "main.js": "/bcs-poker/static/js/main.ce530cea.js",
+    "static/js/787.a0c1eba1.chunk.js": "/bcs-poker/static/js/787.a0c1eba1.chunk.js",
+    "index.html": "/bcs-poker/index.html",
+    "main.7ce45154.css.map": "/bcs-poker/static/css/main.7ce45154.css.map",
+    "main.ce530cea.js.map": "/bcs-poker/static/js/main.ce530cea.js.map",
+    "787.a0c1eba1.chunk.js.map": "/bcs-poker/static/js/787.a0c1eba1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ce45154.css",
+    "static/js/main.ce530cea.js"
+  ]
+}
