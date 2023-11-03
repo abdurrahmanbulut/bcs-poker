@@ -18,6 +18,10 @@ function Login() {
   const db = getDatabase();
   const navigate = useNavigate();
 
+  googleProvider.setCustomParameters({
+    prompt: "select_account"
+  });
+  
   const signInWithEmail = async () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
