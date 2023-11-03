@@ -77,7 +77,6 @@ function Dashboard() {
         updates[`seats/${key}/selectedCard`] = null;
       });
       await dbUpdate(ref(db), updates);
-      console.log("Seçimler başarıyla sıfırlandı.");
     } catch (error) {
       console.error("Seçimleri sıfırlarken hata oluştu:", error.message);
     }
@@ -107,10 +106,7 @@ function Dashboard() {
   };
 
   const handleUsernameSubmit = async () => {
-    console.log(user.displayName);
-    console.log(editedUsername);
-    console.log(true);
-    console.log(editedUsername);
+
     try {
       if (
         user &&
@@ -136,7 +132,6 @@ function Dashboard() {
         }
         await updateProfile(user, { displayName: editedUsername });
 
-        console.log("asdd");
         //setUser({ ...user, displayName: editedUsername });
         setIsEditingUsername(false);
       }
@@ -200,7 +195,7 @@ function Dashboard() {
       <div className="seating-area">
         <div className="left-side">
           {Object.keys(seats)
-            .slice(0, 4)
+            .slice(0, 5)
             .map((seat, index) => (
               <div className="person" key={index}>
                 <div className="seat">{seats[seat].username || index + 1}</div>
@@ -226,7 +221,7 @@ function Dashboard() {
                 </div>
               </div>
             ))}
-          {[...Array(4 - Object.keys(seats).slice(0, 4).length)].map(
+          {[...Array(5 - Object.keys(seats).slice(0, 5).length)].map(
             (_, index) => (
               <div className="person empty" key={index}>
                 <div className="seat"></div>
@@ -238,7 +233,7 @@ function Dashboard() {
         </div>
         <div className="right-side">
           {Object.keys(seats)
-            .slice(4, 8)
+            .slice(5, 10)
             .map((seat, index) => (
               <div className="person" key={index}>
                 <div className="cards">
@@ -264,7 +259,7 @@ function Dashboard() {
                 <div className="seat">{seats[seat].username || index + 5}</div>
               </div>
             ))}
-          {[...Array(4 - Object.keys(seats).slice(4, 8).length)].map(
+          {[...Array(5 - Object.keys(seats).slice(5, 10).length)].map(
             (_, index) => (
               <div className="person empty" key={index}>
                 <div className="cards"></div>

@@ -28,7 +28,7 @@ function Login() {
       const occupiedSeats = seatsSnapshot.val() || {};
 
       const availableSeats = [];
-      for (let i = 1; i <= 16; i++) {
+      for (let i = 1; i <= 10; i++) {
         const seatKey = `seat${i}`;
         if (!occupiedSeats[seatKey]) {
           availableSeats.push(seatKey);
@@ -63,7 +63,7 @@ function Login() {
       const occupiedSeats = seatsSnapshot.val() || {};
 
       const availableSeats = [];
-      for (let i = 1; i <= 16; i++) {
+      for (let i = 1; i <= 10; i++) {
         const seatKey = `seat${i}`;
         if (!occupiedSeats[seatKey] || !occupiedSeats[seatKey].username) {
           availableSeats.push(seatKey);
@@ -98,7 +98,7 @@ function Login() {
       const occupiedSeats = seatsSnapshot.val() || {};
 
       const availableSeats = [];
-      for (let i = 1; i <= 16; i++) {
+      for (let i = 1; i <= 10; i++) {
         const seatKey = `seat${i}`;
         if (!occupiedSeats[seatKey] || !occupiedSeats[seatKey].username) {
           availableSeats.push(seatKey);
